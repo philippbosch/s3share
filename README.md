@@ -1,6 +1,8 @@
 # s3share
 
-_s3share_ is a simple command line tool to share any file with somebody else via [Amazon S3](https://aws.amazon.com/s3/). It will upload the file itself, create a simple HTML page with a download link and output the URL to it.
+_s3share_ is a simple command line tool to share any file with somebody via [Amazon S3](https://aws.amazon.com/s3/). It will upload the file itself, create a simple HTML page with a download link and output the URL to it.
+
+![Demo](https://s3.amazonaws.com/f.cl.ly/items/3Y403n2y0e2v2q2F223R/Screen%20Recording%202015-04-24%20at%2011.02%20vorm..gif)
 
 
 ## Installation
@@ -36,8 +38,6 @@ aws_secret_access_key = …
 
 
 ## Usage
-
-![Demo](https://s3.amazonaws.com/f.cl.ly/items/3Y403n2y0e2v2q2F223R/Screen%20Recording%202015-04-24%20at%2011.02%20vorm..gif)
 
 #### TL;DR:
 
