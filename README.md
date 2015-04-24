@@ -4,6 +4,8 @@ _s3share_ is a simple command line tool to share any file with somebody via [Ama
 
 ![Demo](https://s3.amazonaws.com/f.cl.ly/items/3Y403n2y0e2v2q2F223R/Screen%20Recording%202015-04-24%20at%2011.02%20vorm..gif)
 
+[Resulting download page](http://transfer.pb.io/2lea6wca)
+
 
 ## Installation
 
