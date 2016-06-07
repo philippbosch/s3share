@@ -1,5 +1,8 @@
 import argparse
-import ConfigParser
+try:
+    import configparser
+except ImportError:
+    import ConfigParser as configparser
 import os.path
 import random
 import string
@@ -24,7 +27,7 @@ def main():
         return 1
 
     # Read configuration file
-    config = ConfigParser.ConfigParser()
+    config = configparser.ConfigParser()
     config.read([config_file])
 
     # Read bucket name from config
@@ -63,7 +66,7 @@ def main():
     # Get the bucket
     try:
         bucket = conn.get_bucket(bucket_name)
-    except boto.exception.S3ResponseError, e:
+    except boto.exception.S3ResponseError as e:
         if e.status == 404:
             sys.stderr.write('Bucket does not exist: {0}\n'.format(bucket_name))
         elif e.status == 403:
