@@ -151,11 +151,11 @@ def main():
     html_key.content_type = 'text/html; charset=utf-8'
     html_key.set_contents_from_string(html, policy='public-read')
 
-    # Generate and output the public URL for the download page
+    # Generate and output the public URL for the download page and direct link
     html_url = html_key.generate_url(0, query_auth=False, force_http=True)
     if not args.no_progress:
         sys.stdout.write('\n')
-    sys.stdout.write('{0}\n'.format(html_url))
+    sys.stdout.write('Download page: {0}\nDirect URL:    {1}\n'.format(html_url, url))
 
 
 if __name__ == '__main__':
